@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E. L. INNOVATIVE SOLUTIONS LLC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --purple-dark: #3a0ca3;
+            --purple-main: #7209b7;
+            --purple-light: #b5179e;
+            --purple-bg: #1b0033;
+            --text-light: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: var(--purple-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            max-width: 900px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-right: 15px;
+            margin-top: 30px;
+            padding: 15px 35px;
+            background: linear-gradient(135deg, var(--purple-main), var(--purple-light));
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 40px;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: radial-gradient(circle at top, #5f0f99, #1b0033);
+        }
+
+        .hero h1 {
+            font-size: 60px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        .image-block img {
+            width: 100%;
+            margin-top: 50px;
+            border-radius: 20px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 35px;
+            border-radius: 20px;
+        }
+
+        .process-step {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .contacts {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .contacts img {
+            max-width: 45%;
+            border-radius: 20px;
+        }
+
+        footer {
+            background-color: #12001f;
+            padding: 40px 10%;
+            text-align: center;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 900px) {
+            .contacts {
+                flex-direction: column;
+            }
+
+            .contacts img {
+                max-width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 1. HERO -->
+<section class="hero">
+    <div>
+        <h1>E. L. INNOVATIVE SOLUTIONS LLC</h1>
+        <p>
+            We help businesses turn complex data into confident decisions.  
+            From secure data architectures to practical software and IT consulting,  
+            we build solutions that scale, protect, and perform in real-world environments.
+        </p>
+
+        <a href="#services" class="btn">Services</a>
+        <a href="#contacts" class="btn">Contacts</a>
+    </div>
+</section>
+
+<!-- 2. ABOUT -->
+<section id="about">
+    <h2>Who We Are & Why We Exist</h2>
+    <p>
+        E. L. INNOVATIVE SOLUTIONS LLC is a consulting company focused on data-driven growth,
+        security-first thinking, and technology that actually works for business goals.
+        We partner with organizations that handle sensitive data, complex systems,
+        and fast-changing digital environments.
+        Our team combines analytical expertise, hands-on engineering, and strategic consulting.
+        We don’t sell buzzwords — we deliver clarity, structure, and measurable results.
+    </p>
+
+    <div class="image-block">
+        <img src="https://images.unsplash.com/photo-1479920252409-6e3d8e8d4866?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Professional working with data">
+    </div>
+</section>
+
+<!-- 3. SERVICES -->
+<section id="services">
+    <h2>What We Do Best</h2>
+
+    <div class="grid-3">
+        <div class="card">
+            <h3>Data Consulting & Analytics</h3>
+            <p>
+                We analyze how your data is collected, processed, and used across the organization.
+                Our consultants design clear data models, dashboards, and reporting structures.
+                The result is faster insights, better decisions, and reduced operational friction.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Data Security & Risk Management</h3>
+            <p>
+                We help protect sensitive information from internal and external threats.
+                Our approach includes security assessments, access control design, and compliance guidance.
+                Security is embedded into workflows, not added as an afterthought.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Software & IT Consulting</h3>
+            <p>
+                We advise on software architecture, system integrations, and IT strategy.
+                Whether launching a new platform or optimizing existing infrastructure,
+                we focus on reliability, scalability, and long-term maintainability.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 4. ADVANTAGES -->
+<section>
+    <h2>Why Clients Choose Us</h2>
+
+    <div class="grid-3">
+        <div class="card">
+            <h3>Business-Oriented Thinking</h3>
+            <p>
+                Every technical decision is tied to business impact, cost efficiency,
+                and measurable outcomes — not just technology for technology’s sake.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Security-First Approach</h3>
+            <p>
+                We design solutions with data protection, privacy,
+                and risk reduction built into the foundation from day one.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Clear Communication</h3>
+            <p>
+                We translate complex technical topics into clear, actionable insights
+                that executives and teams can understand and act on.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 5. PROCESS -->
+<section>
+    <h2>How We Work</h2>
+
+    <div class="grid-3">
+        <div class="card">
+            <div class="process-step">1. Discovery & Assessment</div>
+            <p>
+                We start by understanding your goals, data landscape,
+                technical challenges, and security requirements.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="process-step">2. Strategy & Design</div>
+            <p>
+                We design practical solutions, architectures, and roadmaps
+                tailored to your business and operational reality.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="process-step">3. Implementation & Support</div>
+            <p>
+                We assist with execution, optimization, and ongoing improvements
+                to ensure long-term success and stability.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- 6. CONTACTS -->
+<section id="contacts" class="contacts">
+    <div>
+        <h2>Let’s Build Something Smart Together</h2>
+        <p>
+            If you’re looking for a reliable partner in data, security,
+            or IT consulting — we’re ready to start the conversation.
+            Reach out by email and let’s discuss how we can support your goals.
+        </p>
+
+        <p style="margin-top: 30px; font-size: 20px;">
+            📧 <strong>team@elinnovativesolutions.biz</strong>
+        </p>
+
+        <p style="margin-top: 20px;">
+            2736 Noble Rd APT C15<br>
+            Cleveland, OH<br>
+            44121 US
+        </p>
+    </div>
+
+    <img src="https://media.istockphoto.com/id/2235246514/photo/business-meeting-in-modern-corporate-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=LE1O1THDZlxqU17XlnX4gLpFX2v74gqODVw0fUErizs=" alt="Business meeting">
+</section>
+
+<!-- 8. FOOTER -->
+<footer>
+    © 2026 E. L. INNOVATIVE SOLUTIONS LLC. All rights reserved.  
+    Data Consulting • Data Security • Software & IT Consulting
+</footer>
+
+</body>
+</html>
